@@ -1,0 +1,12 @@
+<div class="article d-flex bd-highlight">
+  <h1 class="p-2 flex-grow-1 bd-highlight"><%= @article.title %></h1>
+  <i class="fa-solid fa-pencil"></i><%= link_to 'edit', edit_article_path, class: "link" %></i>
+  <i class="fa-regular fa-trash-can"></i><%= link_to 'delete', article_path(@article), data: {turbo_method: :delete, turbo_confirm: "Really want to delete this article?"}, class: "link"%>
+</div>
+<br>
+<p><%= @article.content %></p>
+<br>
+<h3>Lorem ipsum dolor</h3>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, unde ratione quaerat dolore officia quibusdam, pariatur eos soluta id iure cum quas cumque minus corrupti reprehenderit tempora eius perspiciatis consectetur!</p>
+<h3>Lorem ipsum dolor</h3>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, unde ratione quaerat dolore officia quibusdam, pariatur eos soluta id iure cum quas cumque minus corrupti reprehenderit tempora eius perspiciatis consectetur!</p>
